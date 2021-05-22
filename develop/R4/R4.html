@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pronostico</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/estilosR4.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Pronostico actual</h1>
+      <h4>Buscar ciudad: </h4>
+      <input id="idCiudad" type="text" name="" value="" placeholder="Ciudad, Provincia">
+      <button id="btnBuscar" type="button" name="button">Buscar</button>
+    </header>
+
+    <!-- TABLA -->
+    <div class="div-tabla">
+      <table class="tabla" hidden>
+        <thead>
+          <tr>
+            <th>Ubicación</th>
+            <th>Fecha y hora</th>
+            <th>Temperatura</th>
+            <th>Sensación termica</th>
+            <th>Descripción</th>
+            <th>Humedad</th>
+            <th>Precipitaciones</th>
+            <th>Visibilidad</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+        </tbody>
+      </table>
+    </div>
+
+
+  <!-- JS -->
+  <script src="JS/script.js" charset="utf-8"></script>
+
+  </body>
+</html>
